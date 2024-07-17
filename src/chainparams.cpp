@@ -134,7 +134,7 @@ public:
            }
            printf("\n%s\n", genesis.ToString().c_str());
         }
-        genesis = CreateGenesisBlock(nTime, nNonce, 0x1f0fffff, 1, 50 * COIN);*/
+        genesis = CreateGenesisBlock(nTime, nNonce, 0x1f0fffff, 1, 50 * COIN);
 
         consensus.hashGenesisBlock = genesis.GetHash();
 
