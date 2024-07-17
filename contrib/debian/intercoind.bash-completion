@@ -1,0 +1,2 @@
+contrib/bitcoind.bash-completion	faircoind
+contrib/bitcoin-cli.bash-completion	faircoin-cli

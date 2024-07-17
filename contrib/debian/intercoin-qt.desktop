@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=FairCoin
+Comment=Connect to the FairCoin P2P Network
+Exec=faircoin-qt %u
+Terminal=false
+Type=Application
+Icon=bitcoin128
+MimeType=x-scheme-handler/faircoin;
+Categories=Office;Finance;
+Name[en_US]=faircoin-qt.desktop
