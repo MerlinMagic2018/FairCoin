@@ -42,9 +42,9 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  * transaction cannot be spent since it did not originally exist in the
  * database.
  *
-CBlock(hash=0a1f39a5629a83e3d194c3cfb6876fa09011392772db1a14d45c577d43a24a1d, yespowerpow=0002f9944489c8fc96619a1c4473f8b08a804882fe2b641a6e5f916a06b63f63, ver=0x00000001, 
-hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, 
-hashMerkleRoot=b878d2ba72742d90114db17c9708956b9f72c5e668515b103dbdbfa3f94ec683, nTime=1721228774, nBits=1f0fffff, nNonce=638, vtx=1)
+CBlock(hash=e828fe1dda55000fb73d9f55eb3b6d0014e910dbf466b14ad0eb93239a1cd8f0, yespowerpow=0008ad6c24307e6826278251ff9942dc6138ca97000d72b6077312c9f09c8daa, ver=0x00000001, 
+hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=b878d2ba72742d90114db17c9708956b9f72c5e668515b103dbdbfa3f94ec683, 
+nTime=1721228774, nBits=1f0fffff, nNonce=6940, vtx=1)
   CTransaction(hash=b878d2ba72, ver=1, vin.size=1, vout.size=1, nLockTime=0)
     CTxIn(COutPoint(0000000000, 4294967295), coinbase 04ffff0f1f01040e4a756c792f313774682f32303234)
     CScriptWitness()
@@ -80,7 +80,7 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 840000;
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash   = uint256S("0x0a1f39a5629a83e3d194c3cfb6876fa09011392772db1a14d45c577d43a24a1d");
+        consensus.BIP34Hash   = uint256S("0xe828fe1dda55000fb73d9f55eb3b6d0014e910dbf466b14ad0eb93239a1cd8f0");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.powLimit    = uint256S("0x000fffff00000000000000000000000000000000000000000000000000000000");
@@ -109,7 +109,7 @@ public:
         consensus.nMinimumChainWork =  uint256S ("0x0000000000000000000000000000000000000000000000000000000000000000");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S ("0x0a1f39a5629a83e3d194c3cfb6876fa09011392772db1a14d45c577d43a24a1d"); // 0
+        consensus.defaultAssumeValid = uint256S ("0xe828fe1dda55000fb73d9f55eb3b6d0014e910dbf466b14ad0eb93239a1cd8f0"); // 0
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -123,7 +123,7 @@ public:
         nDefaultPort       = 9876;
         nPruneAfterHeight  = 1000000;
 
-        genesis = CreateGenesisBlock(1721228774, 638, 0x1f0fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1721228774, 6940, 0x1f0fffff, 1, 50 * COIN);
 
     /*    uint32_t nTime = 1721228774;
         uint32_t nNonce = 0;
@@ -140,7 +140,7 @@ public:
 
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert (consensus.hashGenesisBlock == uint256S("0x0a1f39a5629a83e3d194c3cfb6876fa09011392772db1a14d45c577d43a24a1d"));
+        assert (consensus.hashGenesisBlock == uint256S("0xe828fe1dda55000fb73d9f55eb3b6d0014e910dbf466b14ad0eb93239a1cd8f0"));
         assert (genesis.hashMerkleRoot == uint256S("0xb878d2ba72742d90114db17c9708956b9f72c5e668515b103dbdbfa3f94ec683"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,36);
@@ -160,7 +160,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                { 0,     uint256S("0x0a1f39a5629a83e3d194c3cfb6876fa09011392772db1a14d45c577d43a24a1d") }
+                { 0,     uint256S("0xe828fe1dda55000fb73d9f55eb3b6d0014e910dbf466b14ad0eb93239a1cd8f0") }
             }
         };
 
@@ -184,7 +184,7 @@ public:
         consensus.nSubsidyHalvingInterval = 840000;
 
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash   = uint256S("0x0a1f39a5629a83e3d194c3cfb6876fa09011392772db1a14d45c577d43a24a1d");
+        consensus.BIP34Hash   = uint256S("0xe828fe1dda55000fb73d9f55eb3b6d0014e910dbf466b14ad0eb93239a1cd8f0");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.powLimit    = uint256S("0x000fffff00000000000000000000000000000000000000000000000000000000");
@@ -213,7 +213,7 @@ public:
         consensus.nMinimumChainWork =  uint256S ("0x0000000000000000000000000000000000000000000000000000000000000000");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S ("0x0a1f39a5629a83e3d194c3cfb6876fa09011392772db1a14d45c577d43a24a1d"); // 0
+        consensus.defaultAssumeValid = uint256S ("0xe828fe1dda55000fb73d9f55eb3b6d0014e910dbf466b14ad0eb93239a1cd8f0"); // 0
 
         pchMessageStart[0] = 0x58;
         pchMessageStart[1] = 0x38;
@@ -222,7 +222,7 @@ public:
         nDefaultPort       = 19876;
         nPruneAfterHeight  = 1000;
 
-        genesis = CreateGenesisBlock(1721228774, 638, 0x1f0fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1721228774, 6940, 0x1f0fffff, 1, 50 * COIN);
 
   /*      uint32_t nTime = 1721228774;
         uint32_t nNonce = 0;
@@ -239,7 +239,7 @@ public:
 
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert (consensus.hashGenesisBlock == uint256S("0x0a1f39a5629a83e3d194c3cfb6876fa09011392772db1a14d45c577d43a24a1d"));
+        assert (consensus.hashGenesisBlock == uint256S("0xe828fe1dda55000fb73d9f55eb3b6d0014e910dbf466b14ad0eb93239a1cd8f0"));
         assert (genesis.hashMerkleRoot == uint256S("0xb878d2ba72742d90114db17c9708956b9f72c5e668515b103dbdbfa3f94ec683"));
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
@@ -258,7 +258,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-		{0, uint256S("0x0a1f39a5629a83e3d194c3cfb6876fa09011392772db1a14d45c577d43a24a1d")}
+		{0, uint256S("0xe828fe1dda55000fb73d9f55eb3b6d0014e910dbf466b14ad0eb93239a1cd8f0")}
             }
         };
 
@@ -273,7 +273,9 @@ public:
 
 /**
  * Regression test
-CBlock(hash=409a4be16fb9084a53c45e2ca0edd76c65a269bc1312be47cebef23dc3ce552f, yespowerpow=0cdd08b95f3ebe2e5c0d77e41c794126237819a518097df7f67fc9c12ecf5a1f, ver=0x00000001, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=b878d2ba72742d90114db17c9708956b9f72c5e668515b103dbdbfa3f94ec683, nTime=1721228774, nBits=200fffff, nNonce=14, vtx=1)
+CBlock(hash=a54af05f1bd4dc615da14865a3683851d3c187600394c6a92846256cbbae83ed, yespowerpow=0cbca4b56d030f28b13230af4f5b207655dd6213c0ba003a299c2832c839ace7, ver=0x00000001, 
+hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=b878d2ba72742d90114db17c9708956b9f72c5e668515b103dbdbfa3f94ec683, 
+nTime=1721228774, nBits=200fffff, nNonce=1, vtx=1)
   CTransaction(hash=b878d2ba72, ver=1, vin.size=1, vout.size=1, nLockTime=0)
     CTxIn(COutPoint(0000000000, 4294967295), coinbase 04ffff0f1f01040e4a756c792f313774682f32303234)
     CScriptWitness()
@@ -319,9 +321,9 @@ public:
         nDefaultPort       = 19444;
         nPruneAfterHeight  = 1000;
 
-        genesis = CreateGenesisBlock(1721228774, 14, 0x200fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1721228774, 1, 0x200fffff, 1, 50 * COIN);
 
-   /*     uint32_t nTime = 1721228774;
+  /*      uint32_t nTime = 1721228774;
         uint32_t nNonce = 0;
 
         if (nNonce == 0) {
@@ -336,7 +338,7 @@ public:
 
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert (consensus.hashGenesisBlock == uint256S("0x409a4be16fb9084a53c45e2ca0edd76c65a269bc1312be47cebef23dc3ce552f"));
+        assert (consensus.hashGenesisBlock == uint256S("0xa54af05f1bd4dc615da14865a3683851d3c187600394c6a92846256cbbae83ed"));
         assert (genesis.hashMerkleRoot == uint256S("0xb878d2ba72742d90114db17c9708956b9f72c5e668515b103dbdbfa3f94ec683"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
