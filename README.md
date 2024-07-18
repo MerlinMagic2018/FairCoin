@@ -8,7 +8,7 @@ in the world.  FairCoin uses peer-to-peer technology to operate with no central
 authority: managing transactions and issuing coins are carried out collectively 
 by the network. FairCoin is the name of the open source software which enables 
 the use of this coin. Faircoin is mainly based on Bitcoin's source code and was 
-released on December 24th 2019.
+released on July 18th 2024.
 
 Blockchain
 ----------
