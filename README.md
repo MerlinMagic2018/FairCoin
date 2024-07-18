@@ -12,25 +12,24 @@ released on December 24th 2019.
 
 Blockchain
 ----------
-- **Max Money**: 210,000,000 ITC
-- **Block Reward**: 50 ITC
+- **Max Money**: 84,000,000 FRC
+- **Block Reward**: 50 FRC
+- **Block Halving**: every 840,000 blocks ( every 4 years )
 - **Target Timespan**: Every Block
-- **Block Time**: 1 Minute
+- **Block Time**: 2.5 Minute
 - **No Premine or Initial Coin Offering**
 
 Proof of Work
 -------------
-- **PoW Algorithm**: Yespower ( CPU only )
+- **PoW Algorithm**: YespowerLTNCG ( CPU only )
 - **Difficulty**: Uses Dark Gravity Wave and updates every block.
 
 Links
 -------------
-- Website : https://faircoin.tk/
-- Pool : https://pool.faircoin.tk/
-- Explorer : https://explorer.faircoin.tk/
-- Miner : https://github.com/Faircoin-Developer/cpuminer-RKZ/releases/tag/v5.0
-- Discord community : https://discord.gg/w6tGzYZ
-- Bitcointalk ANN : https://bitcointalk.org/index.php?topic=5212185
+- Website : https://faircoin.tech/
+- Pool : https://pool.faircoin.tech/
+- Explorer : https://explorer.faircoin.tech/
+- Miner : https://github.com/FairCoin-Dev/cpuminer-RKZ/releases/tag/v4.2b
 
 License
 -------
